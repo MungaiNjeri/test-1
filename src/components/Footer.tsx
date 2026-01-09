@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <div className="text-2xl font-bold text-white mb-2">Your Name</div>
+            <div className="text-2xl font-bold text-white mb-2">Mary Mungai</div>
             <p className="text-sm">Full-Stack Developer</p>
             <p className="text-sm">Building software that matters</p>
           </div>
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-slate-800 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mary Mungai. All rights reserved.</p>
         </div>
       </div>
     </footer>

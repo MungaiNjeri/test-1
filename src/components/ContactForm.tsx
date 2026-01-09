@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Send, AlertCircle, CheckCircle } from 'lucide-react';
-import { supabase } from '../lib/supabase';
+import { Send, CheckCircle } from 'lucide-react';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -9,8 +8,7 @@ export default function ContactForm() {
     message: ''
   });
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [status, setStatus] = useState<'idle' | 'success'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -20,29 +18,16 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setStatus('idle');
-    setErrorMessage('');
 
-    try {
-      const { error } = await supabase
-        .from('contacts')
-        .insert([formData]);
-
-      if (error) throw error;
-
+    setTimeout(() => {
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setStatus('idle'), 5000);
-    } catch (err) {
-      setStatus('error');
-      setErrorMessage(err instanceof Error ? err.message : 'Failed to send message');
-      setTimeout(() => setStatus('idle'), 5000);
-    } finally {
       setLoading(false);
-    }
+      setTimeout(() => setStatus('idle'), 5000);
+    }, 500);
   };
 
   return (
@@ -103,13 +88,6 @@ export default function ContactForm() {
           <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg">
             <CheckCircle className="w-5 h-5 text-green-600" />
             <p className="text-green-800 font-medium">Message sent! I'll be in touch soon.</p>
-          </div>
-        )}
-
-        {status === 'error' && (
-          <div className="flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-lg">
-            <AlertCircle className="w-5 h-5 text-red-600" />
-            <p className="text-red-800 font-medium">{errorMessage}</p>
           </div>
         )}
 

@@ -22,7 +22,7 @@ export default function CTA() {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/mary-mungai-739297"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-blue-800 hover:bg-blue-900 text-white rounded-lg font-semibold text-lg transition-all duration-200 flex items-center gap-2"

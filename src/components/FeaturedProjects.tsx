@@ -2,28 +2,27 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    name: 'E-Commerce Platform',
-    description: 'A full-featured marketplace where sellers can list products and buyers can discover, review, and purchase items. Built with real-time inventory management and payment processing.',
-    techStack: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-    liveLink: 'https://ecommerce-demo.example.com',
-    githubLink: 'https://github.com/yourusername/ecommerce-platform',
+    name: 'blockchain- and AI-powered survey and data research platform',
+    description: '  A full-stack application that leverages blockchain for secure data storage and AI for advanced analytics. Features include user authentication, survey creation, and real-time data visualization.',
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'TensorFlow'],
+    liveLink: 'https://surdatics.com/',
     image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
-    name: 'Task Management Dashboard',
-    description: 'An intuitive admin panel for managing team tasks, deadlines, and workflows. Features real-time collaboration, file uploads, and automated notifications.',
+    name: 'YAYA HR',
+    description: 'An AI-driven HR management system designed to streamline recruitment in the Blue collar sector through AI-powered candidate matching.',
     techStack: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS'],
-    liveLink: 'https://taskdash-demo.example.com',
-    githubLink: 'https://github.com/yourusername/task-dashboard',
+    liveLink: 'https://yaya-ai-app.netlify.app/',
+    githubLink: 'https://github.com/MungaiNjeri/YAYA-HR',
     image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
-    name: 'Analytics & Reporting API',
-    description: 'A robust REST API that aggregates data from multiple sources and provides real-time analytics. Includes webhook support, custom reports, and comprehensive documentation.',
+    name: 'SYNTHEX360',
+    description: 'A smart Portfolio tracking platform designed to help users monitor, analyze, and understand their investments in one place.',
     techStack: ['Node.js', 'Express', 'MongoDB', 'Redis'],
     liveLink: 'https://api-docs.example.com',
-    githubLink: 'https://github.com/yourusername/analytics-api',
-    image: 'https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=800'
+    githubLink: 'https://github.com/MungaiNjeri/synthex360',
+    image: 'https://pin.it/63OL4gtqy'
   }
 ];
 
@@ -98,7 +97,7 @@ export default function FeaturedProjects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-semibold transition-colors duration-200"
                   >
-                    <Github className="w-5 h-5" />
+                    < Github className="w-5 h-5" />
                     GitHub
                   </a>
                 </div>

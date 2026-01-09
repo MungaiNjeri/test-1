@@ -2,19 +2,13 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    role: 'Founder, TechStart',
+    name: 'Sarah Mungai',
+    role: 'Founder, Sarah-m-wear',
     image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200',
     content: 'Working with this developer was a game-changer. They took our rough idea and turned it into a fully functional MVP in just 6 weeks. The attention to detail and communication throughout was exceptional.',
     rating: 5
   },
-  {
-    name: 'Michael Chen',
-    role: 'CTO, DataFlow Solutions',
-    image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200',
-    content: 'Incredible technical skills paired with business understanding. Our admin panel is now 10x more efficient, and our team loves using it. Highly recommend for any serious project.',
-    rating: 5
-  },
+  
   {
     name: 'Emily Rodriguez',
     role: 'Product Manager, InnovateCo',

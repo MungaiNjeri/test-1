@@ -127,14 +127,14 @@ export default function ContactForm() {
         <p className="text-slate-600 text-sm text-center mb-4">Or reach out directly:</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="mailto:hello@yourname.com"
+            href="njeri255mungai@gmail.com"
             className="text-blue-600 hover:text-blue-700 font-semibold"
           >
             hello@yourname.com
           </a>
           <span className="text-slate-300 hidden sm:inline">•</span>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/mary-mungai-739297"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-700 font-semibold"

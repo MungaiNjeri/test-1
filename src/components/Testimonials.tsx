@@ -2,18 +2,24 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah Mungai',
-    role: 'Founder, Sarah-m-wear',
-    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200',
-    content: 'Working with this developer was a game-changer. They took our rough idea and turned it into a fully functional MVP in just 6 weeks. The attention to detail and communication throughout was exceptional.',
+    name: 'Amara Okafor',
+    role: 'CEO, TechStartup Africa',
+    image: 'https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=200',
+    content: 'Exceptional work. Mary delivered a sophisticated web platform that exceeded all our expectations. Her technical expertise and dedication to understanding our vision made all the difference.',
     rating: 5
   },
-  
   {
-    name: 'Emily Rodriguez',
-    role: 'Product Manager, InnovateCo',
-    image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200',
-    content: 'Best freelancer I\'ve worked with. Fast responses, clean code, and they actually care about the success of your project. Our API integration was seamless and well-documented.',
+    name: 'Kofi Mensah',
+    role: 'Founder, Digital Solutions',
+    image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=200',
+    content: 'Outstanding developer. Fast delivery, clean code, and always goes the extra mile. Working with Mary transformed our project timeline and delivered results beyond expectations.',
+    rating: 5
+  },
+  {
+    name: 'Zainab Hassan',
+    role: 'Product Lead, InnovateCo',
+    image: 'https://images.pexels.com/photos/3807318/pexels-photo-3807318.jpeg?auto=compress&cs=tinysrgb&w=200',
+    content: 'Mary is a professional who truly cares about project success. The communication was excellent, the code was pristine, and the delivery was on time. Highly recommended for any serious project.',
     rating: 5
   }
 ];
@@ -31,7 +37,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
